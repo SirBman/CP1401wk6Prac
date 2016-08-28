@@ -9,12 +9,9 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
                "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 # print(STATE_NAMES)
 
-state = input("Enter short state: ")
-stateCaps = state.upper()
-print (stateCaps)
-while state != "":
-    if stateCaps in STATE_NAMES:
-        print(stateCaps, "is", STATE_NAMES[state])
-    else:
-        print("Invalid short state")
-    state = input("Enter short state: ")
+
+i=0
+stateNum = len(STATE_NAMES)
+
+for state, stateName in STATE_NAMES.items():
+    print("{:<} is {:>12}".format(state, stateName))
