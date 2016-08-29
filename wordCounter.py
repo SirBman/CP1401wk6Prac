@@ -6,8 +6,6 @@ strInput.strip()
 strInput.lower()
 wordList = strInput.split()
 
-print(wordList)
-
 wordCount = {}
 
 for word in wordList:
