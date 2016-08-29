@@ -14,4 +14,6 @@ i=0
 stateNum = len(STATE_NAMES)
 
 for state, stateName in STATE_NAMES.items():
-    print("{:<} is {:>12}".format(state, stateName))
+
+   # if STATE_NAMES
+    print("{:<} is {}".format(state, stateName))
